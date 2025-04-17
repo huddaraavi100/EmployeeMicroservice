@@ -1,6 +1,6 @@
-package com.gyrsh.demotest.controller;
+package com.project.employeeMicroservice.controller;
 
-import com.gyrsh.demotest.model.EmpDetails;
+import com.project.employeeMicroservice.model.EmpDetails;
 import org.springframework.web.bind.annotation.*;
 
 

@@ -1,4 +1,4 @@
-package com.gyrsh.demotest.model;
+package com.project.employeeMicroservice.model;
 
 public class EmpDetails {
     private int id;
