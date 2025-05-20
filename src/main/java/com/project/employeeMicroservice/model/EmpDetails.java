@@ -1,6 +1,15 @@
 package com.project.employeeMicroservice.model;
 
+//POJO (defines parameter or model)
+
+import jakarta.persistence.*;
+
+
+@Entity
+@Table(name = "employee")
 public class EmpDetails {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private String dept;
@@ -10,6 +19,10 @@ public class EmpDetails {
     private long phone;
     private long sal;
     private String designation;
+
+    public EmpDetails() {
+    }
+
     public EmpDetails(int id, String name, String dept, String email, String address, String doj, long phone,
                       long sal, String designation) {
         this.id = id;

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
 
     @GetMapping("/{raavi}/{tina}")
-    public String home(@PathVariable("raavi") String commandType,@PathVariable("tina")  String variableName) {
-        return "Hello! Your Spring Boot app is running 🚀"+commandType+" "+variableName;
+    public String home(@PathVariable String raavi,@PathVariable String tina) {
+        return "Hello! Your Spring Boot app is running 🚀"+raavi+" "+tina;
     }
 }
